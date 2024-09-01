@@ -1,0 +1,134 @@
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top_container {
+    display: flex;
+}
+
+#book_img {
+    height: 450px;
+    margin-left: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#book_name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.book_info {
+    margin-left: 25px;
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.book_info>p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.book_description {
+    color: rgb(132, 76, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    word-wrap: break-word;
+    display: grid;
+    place-content: center;
+}
+
+.book_description>p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.bottom_container {
+    display: flex;
+}
+
+#instance_table {
+    margin-left: 25px;
+    margin-right: 25px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #90592d;
+    padding: 6px;
+    text-align: center;
+    font-size: 17px;
+    height: 40px;
+    color: rgb(132, 76, 27)
+}
+
+th {
+  background-color: #ffc471;
+}
+
+#queue_table {
+    width: 100%;
+    margin-right: 25px;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 987px) {
+    main {
+        flex-direction: column;
+        align-content: center;
+    }
+    .top_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bottom_container {
+        flex-direction: column;
+    }
+
+    #book_img {
+        width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    table {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #instance_table {
+        align-self: center;
+    }
+}
