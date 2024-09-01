@@ -40,7 +40,7 @@
                     }
                     echo '<td>' . $day . '</td>';
                     switch ($key) {
-                        case 0: echo '<td>10:00 - 20:00</td>'; break;
+                        case 0: echo '<td>10:00 - 21:00</td>'; break;
                         case 1: echo '<td>выходной</td>'; break;
                         case 2: case 3: case 4: echo '<td>10:00 - 20:00</td>'; break;
                         case 5: case 6: echo '<td>10:00 - 18:00</td>'; break;
